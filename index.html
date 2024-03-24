@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="content">
       <div class="form">
-        <label for="">Email</label>
-        <input type="text" />
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+        <span id="emailError" class="error-message"></span>
 
         <label for="">Country</label>
-        <input type="text" />
-
-        <label for="">Zip Code</label>
-        <input type="text" />
-
-        <label for="">Password</label>
-        <input type="text" />
-
-        <label for="">Password Confirmation</label>
-        <input type="text" />
+        <input type="text" id="country" name="country" />
+        <span id="countryError" class="error-message"></span>
 
         <button>submit</button>
       </div>
