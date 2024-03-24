@@ -1,21 +1,11 @@
-const emailInput = document.getElementById('email');
-const emailError = document.getElementById('emailError');
+// password validation
+const passwordInput = document.getElementById('password');
+const passwordError = document.getElementById('passwordError');
 
-emailInput.addEventListener('input', () => {
-  if (emailInput.value.length < 5) {
-    emailError.textContent = '';
+passwordInput.addEventListener('input', () => {
+  if (passwordInput.value.length < 6) {
+    passwordError.textContent = 'at least 6 characters';
   } else {
-    emailError.textContent = '';
-  }
-});
-
-const countryInput = document.getElementById('country');
-const countryError = document.getElementById('countryError');
-
-countryInput.addEventListener('input', () => {
-  if (countryInput.value.length < 5) {
-    countryError.textContent = '';
-  } else {
-    countryError.textContent = '';
+    passwordError.textContent = '';
   }
 });

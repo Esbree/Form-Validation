@@ -10,15 +10,34 @@
   <body>
     <div class="content">
       <div class="form">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" />
-        <span id="emailError" class="error-message"></span>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required />
+          <span id="emailError" class="error-message"></span>
 
-        <label for="">Country</label>
-        <input type="text" id="country" name="country" />
-        <span id="countryError" class="error-message"></span>
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" required />
+          <span id="countryError" class="error-message"></span>
 
-        <button>submit</button>
+          <label for="zipCode">Zip Code</label>
+          <input type="number" id="zipCode" name="zipCode" required />
+          <span id="zipCodeError" class="error-message"></span>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <span id="passwordError" class="error-message"></span>
+
+          <label for="passwordConfirmation">Password Confirmation</label>
+          <input
+            type="password"
+            id="passwordConfirmation"
+            name="passwordConfirmation"
+            required
+          />
+          <span id="passwordConfirmationError" class="error-message"></span>
+
+          <input type="submit" class="button" />
+        </form>
       </div>
     </div>
   </body>

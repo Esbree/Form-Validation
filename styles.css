@@ -1,11 +1,11 @@
-.form {
+form {
   display: flex;
   flex-direction: column;
   margin: 24px;
   width: 300px;
 }
 
-button {
+.button {
   margin-top: 24px;
   width: 80px;
 }
